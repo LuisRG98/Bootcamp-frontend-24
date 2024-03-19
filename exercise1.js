@@ -17,7 +17,7 @@ async function loadJson(url) {
 async function demoGithubUser() {
   let name;
   do {
-    name = prompt("Enter a name?", "vanimar");
+    name = prompt("Enter a name?", "LuisRG98");
     try {
       const user = await loadJson(`https://api.github.com/users/${name}`);
       alert(`Full name: ${user.name}.`);
