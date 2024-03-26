@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Page Layout</title>
+<style>
+  body, html {
+    margin: 0;
+    padding: 20px;
+    background-color: #4B0082; /* Indigo background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  .box {
+    background-color: transparent;
+    border: 5px solid;
+    margin-bottom: 20px;
+    position: relative;
+  }
+
+  .navbar {
+    border-color: #FF4500 #00008B #00008B #FF4500; /* Red-Orange top and bottom, Navy Blue sides */
+    height: 10%;
+  }
+
+  .navbar .top-box, .footer .bottom-box {
+    border-color: #00008B #FF4500 #FF4500 #00008B; /* Navy Blue top and bottom, Red-Orange sides */
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+  }
+
+  .main-content {
+    border-color: #FF4500; /* Red-Orange */
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .main-content .content-box {
+    border-color: #00008B; /* Navy Blue */
+    height: 33%;
+    margin: 5px;
+  }
+
+  .footer {
+    border-color: #FF4500 #00008B #00008B #FF4500; /* Red-Orange top and bottom, Navy Blue sides */
+    height: 10%;
+  }
+
+</style>
+</head>
+<body>
+    <div class="navbar box">
+      <div class="top-box"></div>
+    </div>
+    <div class="main-content box">
+      <div class="content-box"></div>
+      <div class="content-box"></div>
+      <div class="content-box"></div>
+    </div>
+    <div class="footer box">
+      <div class="bottom-box"></div>
+    </div>
+</body>
+</html>
