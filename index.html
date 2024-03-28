@@ -6,10 +6,16 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="top"></div>
-    <div class="stars"></div>
-    <div class="image"></div>
-
+    <div class="top-content">
+      <div class="top"></div>
+      <div class="stars"></div>
+      <div class="image">
+        <img
+          src="https://images.bigbadtoystore.com/images/p/full/2023/08/a56405f0-4afe-4f2f-98b2-0e54551e19d3.jpg"
+          alt=""
+        />
+      </div>
+    </div>
     <div class="flex-container">
       <div class="desc"></div>
       <div class="stats"></div>
@@ -36,6 +42,15 @@
     border-style: solid;
     color: blue;
     flex-basis: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
   .desc {
     margin: 20px;
@@ -55,5 +70,10 @@
     flex-direction: column;
     border-style: solid;
     color: red;
+  }
+  .top-content {
+    display: flex;
+    margin: 0px 10px;
+    flex-direction: column;
   }
 </style>
